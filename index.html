@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BLUET TECNOLOGÍA | Smart TV</title>
+<title>BLUET TECNOLOGÍA</title>
 
 <style>
 
@@ -23,7 +23,7 @@ body{
     background-position:center;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    color:white;
+    color:#fff;
     min-height:100vh;
 }
 
@@ -40,67 +40,98 @@ header img{
 }
 
 @keyframes giro{
-    from{transform:rotate(0deg);}
-    to{transform:rotate(360deg);}
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
 }
 
 h1{
     margin-top:20px;
-    color:#8B5CF6;
     font-size:42px;
+    color:#8B5CF6;
     text-shadow:0 0 20px #8B5CF6;
 }
 
 .subtitulo{
     margin-top:10px;
     color:#ddd;
-    font-size:20px;
+    font-size:22px;
 }
 
 .apps{
-    max-width:1100px;
+
+    max-width:1200px;
     margin:auto;
+
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
     gap:25px;
     padding:40px 20px;
+
 }
 
 .card{
 
-    background:rgba(25,25,35,.75);
-    backdrop-filter:blur(12px);
-    border-radius:18px;
-    padding:25px;
-    text-align:center;
-    transition:.35s;
+    background:rgba(20,20,30,.70);
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
     border:1px solid rgba(139,92,246,.35);
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.35s;
 
 }
 
 .card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
+
     box-shadow:0 0 25px #8B5CF6;
+
+}
+
+.icono{
+
+    font-size:60px;
+    margin-bottom:15px;
 
 }
 
 .card h2{
 
-    margin-bottom:20px;
+    margin-bottom:10px;
     color:#fff;
+
+}
+
+.card p{
+
+    color:#ccc;
+    margin-bottom:25px;
 
 }
 
 .btn{
 
 display:inline-block;
-text-decoration:none;
+
+padding:14px 35px;
+
 background:#8B5CF6;
-color:white;
-padding:14px 30px;
-border-radius:40px;
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:50px;
+
 font-weight:bold;
+
 transition:.3s;
 
 }
@@ -108,22 +139,19 @@ transition:.3s;
 .btn:hover{
 
 background:#6D28D9;
+
 transform:scale(1.05);
+
 box-shadow:0 0 20px #8B5CF6;
-
-}
-
-.volver{
-
-text-align:center;
-margin:40px;
 
 }
 
 footer{
 
 text-align:center;
-padding:25px;
+
+padding:30px;
+
 color:#bbb;
 
 }
@@ -140,39 +168,63 @@ color:#bbb;
 
 <h1>BLUET TECNOLOGÍA</h1>
 
-<p class="subtitulo">Aplicaciones para Smart TV</p>
+<p class="subtitulo">
+Centro de Descargas
+</p>
 
 </header>
 
 <section class="apps">
 
 <div class="card">
-<h2>📺 Smart TV Versión 4.0</h2>
-<a class="btn" href="apk/smarttv4.apk">⬇ Descargar</a>
+
+<div class="icono">📺</div>
+
+<h2>Smart TV</h2>
+
+<p>Aplicaciones para Smart TV.</p>
+
+<a href="smarttv.html" class="btn">Abrir</a>
+
 </div>
 
 <div class="card">
-<h2>📺 Smart TV Versión 3.0</h2>
-<a class="btn" href="apk/smarttv3.apk">⬇ Descargar</a>
+
+<div class="icono">📡</div>
+
+<h2>Xuper TV</h2>
+
+<p>Versiones y aplicaciones Xuper TV.</p>
+
+<a href="xupertv.html" class="btn">Abrir</a>
+
 </div>
 
 <div class="card">
-<h2>📺 Smart TV Versión 2.0</h2>
-<a class="btn" href="apk/smarttv2.apk">⬇ Descargar</a>
+
+<div class="icono">📱</div>
+
+<h2>Teléfono</h2>
+
+<p>Aplicaciones para Android.</p>
+
+<a href="telefono.html" class="btn">Abrir</a>
+
 </div>
 
 <div class="card">
-<h2>📺 Smart TV Versión 1.0</h2>
-<a class="btn" href="apk/smarttv1.apk">⬇ Descargar</a>
+
+<div class="icono">📦</div>
+
+<h2>Más App</h2>
+
+<p>Herramientas y utilidades.</p>
+
+<a href="masapp.html" class="btn">Abrir</a>
+
 </div>
 
 </section>
-
-<div class="volver">
-
-<a class="btn" href="index.html">🏠 Volver al Inicio</a>
-
-</div>
 
 <footer>
 
