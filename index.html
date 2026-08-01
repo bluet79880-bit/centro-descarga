@@ -3,32 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BLUET TECNOLOGÍA</title>
+
+<title>BLUET TECNOLOGÍA | Smart TV</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
     background-image:
-        linear-gradient(rgba(5,7,13,0.80), rgba(5,7,13,0.90)),
-        url("fondo.png");
+    linear-gradient(rgba(5,7,13,.80),rgba(5,7,13,.90)),
+    url("fondo.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    color:#fff;
+    color:white;
     min-height:100vh;
 }
 
@@ -38,10 +33,10 @@ header{
 }
 
 header img{
-    width:180px;
+    width:170px;
     border-radius:50%;
-    box-shadow:0 0 25px #00ccff;
     animation:giro 8s linear infinite;
+    box-shadow:0 0 25px #8B5CF6;
 }
 
 @keyframes giro{
@@ -51,132 +46,88 @@ header img{
 
 h1{
     margin-top:20px;
-    font-size:40px;
-    color:#00d9ff;
-    text-shadow:0 0 15px #00d9ff;
+    color:#8B5CF6;
+    font-size:42px;
+    text-shadow:0 0 20px #8B5CF6;
 }
 
-p{
-    color:#d6d6d6;
+.subtitulo{
     margin-top:10px;
+    color:#ddd;
+    font-size:20px;
 }
 
 .apps{
+    max-width:1100px;
+    margin:auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:25px;
-    padding:40px;
+    padding:40px 20px;
 }
 
 .card{
-    background:rgba(17,24,39,0.75);
-    backdrop-filter:blur(10px);
-    border:1px solid rgba(0,255,255,0.25);
-    border-radius:20px;
+
+    background:rgba(25,25,35,.75);
+    backdrop-filter:blur(12px);
+    border-radius:18px;
     padding:25px;
     text-align:center;
-    transition:.3s;
-    box-shadow:0 0 20px rgba(0,255,255,0.20);
+    transition:.35s;
+    border:1px solid rgba(139,92,246,.35);
+
 }
 
 .card:hover{
+
     transform:translateY(-8px);
-    box-shadow:0 0 30px #00e5ff;
+    box-shadow:0 0 25px #8B5CF6;
+
 }
 
-button{
-    margin-top:15px;
-    padding:12px 30px;
-    border:none;
-    border-radius:50px;
-    background:#00bfff;
+.card h2{
+
+    margin-bottom:20px;
     color:#fff;
-    font-size:17px;
-    cursor:pointer;
-    transition:.3s;
+
 }
 
-button:hover{
-    background:#0099ff;
-    box-shadow:0 0 20px #00ccff;
-}
+.btn{
 
-footer{
-    text-align:center;
-    padding:30px;
-    color:#ddd;
-}
-
-header{
-text-align:center;
-padding:40px 20px;
-}
-
-header img{
-width:180px;
-border-radius:50%;
-box-shadow:0 0 30px #00ccff;
-animation:giro 8s linear infinite;
-}
-
-@keyframes giro{
-0%{transform:rotate(0deg);}
-100%{transform:rotate(360deg);}
-}
-
-h1{
-margin-top:20px;
-font-size:40px;
-color:#00c8ff;
-}
-
-p{
-color:#bbb;
-margin-top:10px;
-}
-
-.apps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:40px;
-}
-
-.card{
-background:#111827;
-padding:25px;
-border-radius:20px;
-text-align:center;
-transition:.4s;
-box-shadow:0 0 20px rgba(0,255,255,.15);
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 30px cyan;
-}
-
-button{
-margin-top:15px;
-padding:12px 30px;
-border:none;
-border-radius:50px;
-background:#00bfff;
+display:inline-block;
+text-decoration:none;
+background:#8B5CF6;
 color:white;
-font-size:17px;
-cursor:pointer;
+padding:14px 30px;
+border-radius:40px;
+font-weight:bold;
 transition:.3s;
+
 }
 
-button:hover{
-background:#008cff;
+.btn:hover{
+
+background:#6D28D9;
+transform:scale(1.05);
+box-shadow:0 0 20px #8B5CF6;
+
+}
+
+.volver{
+
+text-align:center;
+margin:40px;
+
 }
 
 footer{
+
 text-align:center;
-padding:30px;
-color:#888;
+padding:25px;
+color:#bbb;
+
 }
+
 </style>
 
 </head>
@@ -185,188 +136,43 @@ color:#888;
 
 <header>
 
-<img src="logo.png">
+<img src="logo.png" alt="Logo">
 
 <h1>BLUET TECNOLOGÍA</h1>
 
-<p>Centro de Descargas</p>
+<p class="subtitulo">Aplicaciones para Smart TV</p>
 
 </header>
 
 <section class="apps">
 
 <div class="card">
-<h2>Xuper</h2>
-<button>Descargar</button>
+<h2>📺 Smart TV Versión 4.0</h2>
+<a class="btn" href="apk/smarttv4.apk">⬇ Descargar</a>
 </div>
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Descargas XUPER</h1>
-
-<h3>XUPER Versión 4.0</h3>
-<a href="apk/xuper4.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>XUPER Versión 3.0</h3>
-<a href="apk/xuper3.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>XUPER Versión 2.0</h3>
-<a href="apk/xuper2.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>XUPER Versión 1.0</h3>
-<a href="apk/xuper1.apk">
-<button>DESCARGAR</button>
-</a>
-
-</body>
-</html>
-
-
-
-
 
 <div class="card">
-<h2>VPN</h2>
-<button>Descargar</button>
+<h2>📺 Smart TV Versión 3.0</h2>
+<a class="btn" href="apk/smarttv3.apk">⬇ Descargar</a>
 </div>
-    
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Descargas VPN</h1>
-
-<h3>VPN Versión 4.0</h3>
-<a href="apk/vpn4.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>VPN Versión 3.0</h3>
-<a href="apk/vpn3.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>VPN Versión 2.0</h3>
-<a href="apk/vpn2.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>VPN Versión 1.0</h3>
-<a href="apk/vpn1.apk">
-<button>DESCARGAR</button>
-</a>
-
-</body>
-</html>
 
 <div class="card">
-<h2>Smart TV</h2>
-<button>Descargar</button>
+<h2>📺 Smart TV Versión 2.0</h2>
+<a class="btn" href="apk/smarttv2.apk">⬇ Descargar</a>
 </div>
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Descargas SMART TV</h1>
-
-<h3>SMART TV Versión 4.0</h3>
-<a href="apk/smarttv4.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>SMART TV Versión 3.0</h3>
-<a href="apk/smarttv3.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>SMART TV Versión 2.0</h3>
-<a href="apk/smarttv2.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>SMART TV Versión 1.0</h3>
-<a href="apk/smarttv1.apk">
-<button>DESCARGAR</button>
-</a>
-
-</body>
-</html>
 
 <div class="card">
-<h2>Magma TV</h2>
-<button>Descargar</button>
+<h2>📺 Smart TV Versión 1.0</h2>
+<a class="btn" href="apk/smarttv1.apk">⬇ Descargar</a>
 </div>
-    
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Descargas MAGMA TV</h1>
-
-<h3>MAGMA TV Versión 4.0</h3>
-<a href="apk/magmatv4.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>MAGMA TV Versión 3.0</h3>
-<a href="apk/magmatv3.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>MAGMA TV Versión 2.0</h3>
-<a href="apk/magmatv2.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>MAGMA TV Versión 1.0</h3>
-<a href="apk/magmatv1.apk">
-<button>DESCARGAR</button>
-</a>
-
-<a href="appmovil.html">
-<button>APP PARA MOVIL</button>
-</a>
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Descargas APP PARA MOVIL</h1>
-
-<h3>APP PARA MOVIL Versión 4.0</h3>
-<a href="apk/appmovil4.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>APP PARA MOVIL Versión 3.0</h3>
-<a href="apk/appmovil3.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>APP PARA MOVIL Versión 2.0</h3>
-<a href="apk/appmovil2.apk">
-<button>DESCARGAR</button>
-</a>
-
-<h3>APP PARA MOVIL Versión 1.0</h3>
-<a href="apk/appmovil1.apk">
-<button>DESCARGAR</button>
-</a>
-
-</body>
-</html>
-
 
 </section>
+
+<div class="volver">
+
+<a class="btn" href="index.html">🏠 Volver al Inicio</a>
+
+</div>
 
 <footer>
 
