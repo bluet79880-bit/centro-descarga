@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart TV</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("fondo.png");
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.app {
+    background: rgba(0,0,0,0.7);
+    padding: 25px;
+    border-radius: 15px;
+    width: 260px;
+}
+
+.app h2 {
+    font-size: 25px;
+}
+
+a {
+    display: inline-block;
+    background: #00aaff;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.volver {
+    display: inline-block;
+    margin: 20px;
+    background: #444;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<img src="logo.png" class="logo">
+
+<h1>Aplicaciones Smart TV</h1>
+
+<a class="volver" href="index.html">
+Volver al inicio
+</a>
+
+<div id="apps"></div>
+
+
+<script src="script.js"></script>
+
+<script>
+cargarApps("smarttv");
+</script>
+
+</body>
+</html>
