@@ -1,0 +1,33 @@
+{
+  "smarttv": [
+    {
+      "nombre": "Smart TV 4.0",
+      "archivo": "apk/smarttv/smarttv4.apk",
+      "tipo": "APK"
+    }
+  ],
+
+  "xupertv": [
+    {
+      "nombre": "Xuper TV 4.0",
+      "archivo": "apk/xupertv/xuper4.apk",
+      "tipo": "APK"
+    }
+  ],
+
+  "telefono": [
+    {
+      "nombre": "Telefono",
+      "archivo": "apk/telefono/.apk",
+      "tipo": "APK"
+    }
+  ],
+
+  "masapp": [
+    {
+      "nombre": "MX Player",
+      "archivo": "apk/masapp/mxplayer.apk",
+      "tipo": "APK"
+    }
+  ]
+}
